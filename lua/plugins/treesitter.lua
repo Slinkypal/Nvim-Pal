@@ -12,6 +12,7 @@ return {
 
     local parsers = {
       "python",
+			"r",
       "markdown",
       "markdown_inline",
       "javascript",
@@ -20,6 +21,8 @@ return {
       "java",
       "cpp",
       "lua",
+			"typst",
+			"latex",
     }
 
     ts.install(parsers)
