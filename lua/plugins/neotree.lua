@@ -13,7 +13,7 @@ return {
 			{ "<leader>e", "<Cmd>Neotree toggle<CR>", desc = "Toggle Neo-tree" },
 		},
 		opts = {
-			close_if_last_window = true, -- Close Neo-tree if it is the last window left in the tab
+			close_if_last_window = false, -- Close Neo-tree if it is the last window left in the tab
 
 			-- =========================================================
 			-- source_selector: esto agrega las "pestañas" arriba del
@@ -79,10 +79,10 @@ return {
 				filtered_items = {
 					visible = false,
 					hide_dotfiles = true,
-					hide_gitignored = false,
-				},
-				window = {
-					mappings = {
+					hide_gitignored = false, 
+				  }, 
+					window = {
+						mappings = {
 						["."]     = "set_root",
 						["H"]     = "toggle_hidden",
 						["f"]     = "filter_on_submit",

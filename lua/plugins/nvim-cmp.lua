@@ -11,6 +11,7 @@ return {
       "saadparwaiz1/cmp_luasnip",   -- fuente: snippets vía LuaSnip
       "rafamadriz/friendly-snippets", -- colección de snippets listos
       "onsails/lspkind.nvim",       -- iconos bonitos en el menú
+			"jmbuhr/otter.nvim",
     },
     config = function()
       local cmp = require("cmp")
@@ -55,7 +56,8 @@ return {
 
         sources = cmp.config.sources({
           { name = "nvim_lsp", priority = 1000 },
-          { name = "luasnip", priority = 750 },
+					{ name = "otter", priority = 900},
+					{ name = "luasnip", priority = 750 },
           { name = "path", priority = 500 },
         }, {
           { name = "buffer", priority = 250 },
